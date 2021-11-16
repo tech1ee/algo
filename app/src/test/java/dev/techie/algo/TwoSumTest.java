@@ -30,4 +30,12 @@ public class TwoSumTest extends TestCase {
         int[] result = twoSum.findTwoSum(new int[] {1, 5}, 11);
         assertNull(result);
     }
+
+    public void testOptimalReturnRightIndices() {
+        int[] numbers = new int[] {1, 3, 7, 9, 2};
+        int target = 11;
+        int[] expected = new int[] {3, 4};
+        int[] result = twoSum.findTwoSumOptimal(numbers, target);
+        assertEquals(Arrays.toString(expected), Arrays.toString(result));
+    }
 }
