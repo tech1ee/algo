@@ -1,6 +1,7 @@
 package dev.techie.algo;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
 
@@ -19,14 +20,16 @@ public class TwoSum {
     }
 
     /**
-     *
+     * Time: O(N)
+     * Space: O(N)
      */
     public int[] findTwoSumOptimal(int[] numbers, int target) {
-        HashMap<Integer, Integer> numbersMap = new HashMap();
+        Map<Integer, Integer> numbersMap = new HashMap();
         for (int p = 0; p < numbers.length; p++) {
             Integer currentMapVal = numbersMap.get(numbers[p]);
-            if (currentMapVal != null && currentMapVal >= 0) return new int[] {currentMapVal, p};
-            else {
+            if (currentMapVal != null && currentMapVal >= 0) {
+                return new int[] {currentMapVal, p};
+            } else {
                 int numberToFind = target - numbers[p];
                 numbersMap.put(numberToFind, p);
             }
