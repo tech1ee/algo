@@ -6,7 +6,7 @@ import java.util.Map;
 public class TwoSum {
 
     /**
-     * Time: O(N2)
+     * Time: O(N^2)
      * Space: O(1)
      */
     public int[] findTwoSum(int[] numbers, int target) {
