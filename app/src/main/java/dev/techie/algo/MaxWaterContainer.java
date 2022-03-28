@@ -32,7 +32,7 @@ public class MaxWaterContainer {
             maxArea = Math.max(maxArea, area);
 
             if (heights[p1] <= heights[p2]) p1++;
-            else p2++;
+            else p2--;
         }
         return maxArea;
     }
