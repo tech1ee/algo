@@ -1,7 +1,5 @@
 package dev.techie.algo;
 
-import android.util.Log;
-
 public class MaxWaterContainer {
 
     /**
