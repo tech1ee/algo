@@ -22,7 +22,7 @@ public class CashRegister {
     ) {
 
         TreeMap<Coin, Integer> registerAmount = new TreeMap<>(register);
-        HashMap<Coin, Integer> changeMap = new HashMap();
+        HashMap<Coin, Integer> changeMap = new HashMap<>();
 
         int paidAmount = 0;
 
